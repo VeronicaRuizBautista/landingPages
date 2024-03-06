@@ -21,7 +21,7 @@ body {
     " . container container . . ."
     ". . . . . . "
     " . cajas cajas cajas cajas ."
-    ". . . . . . "
+    ". . . . . ilera1 "
     ;
     inset: 0;
     margin: auto;
@@ -61,6 +61,9 @@ body {
 }
 .cajas div p {
     padding-top: 8px;
+}
+.ilera1 {
+    grid-area: ilera1;
 }
 .container .ilera1{
     display: flex;
