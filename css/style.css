@@ -24,13 +24,13 @@ body {
 }
 .container1 {
     width: 70%;
-    padding: 20px;
+    padding: 10px;
     grid-area: h_1;
     color: var(--color-blanco);
     font-size: 3vw
 }
 .container2{
-    padding-top: 10px;
+    padding-top: 20px;
     grid-area: parrafo;
     color: var(--color-blanco);
     font-size: x-large;
@@ -38,6 +38,7 @@ body {
 .btn {
     padding-top: 50px;
     grid-area: btn;
+    padding-left: 10px;
 }
 .btn button {
     width: 8vw;
@@ -48,6 +49,7 @@ body {
     background-color: var(--color-mostaza);
     border-radius: 30px;
 }
-.btn button:hover{
-    box-shadow: 0, 0, 10px ;
+.boton:hover{
+    cursor: pointer;
+    font-weight: bold
 }
