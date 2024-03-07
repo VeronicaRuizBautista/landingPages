@@ -36,20 +36,21 @@ body {
     font-size: x-large;
 }
 .btn {
-    padding-top: 50px;
+    padding-top: 30px;
     grid-area: btn;
     padding-left: 10px;
 }
 .btn button {
-    width: 8vw;
-    height: 6vh;
+    width: 9vw;
+    height: 6.5vh;
     padding: 3px;
-    font-size: x-large;
+    font-size: 2em;
     border: none;
     background-color: var(--color-mostaza);
     border-radius: 30px;
 }
 .boton:hover{
     cursor: pointer;
-    font-weight: bold
+    transition: .3s;
+    box-shadow: 0 0 8px var(--color-mostaza);
 }
