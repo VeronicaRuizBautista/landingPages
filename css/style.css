@@ -1,1 +1,124 @@
 @import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.body{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    inset: 0;
+    z-index: -10;
+    margin: auto;
+    background-color: var(--color-fondo);
+    display: grid;
+    grid-template-columns: .3fr repeat(3, 1fr) .5fr;
+    grid-template-rows: .8fr 3fr 1.2fr;
+    grid-template-areas:
+    ". . . . ."
+    ". contenido contenido . ."
+    ". c1 c2 c3 ."
+    ;
+}
+.img{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    z-index: -10;
+}
+.container1{
+    grid-area: contenido;
+    color: var(--color-blanco);
+    width: 85%;
+}
+h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rojo{
+    color: var(--color-tomate);
+}
+.container2{
+    padding-top: 30px;
+    display: flex;
+    padding-left: 10px;
+}
+.container2 img{
+    width: 4.5vw;
+    margin: -10px;
+}
+.container1 p{
+    padding-top: 30px;
+    font-size: large;
+    padding-right: 5vw;
+}
+.boton{
+    padding-top: 30px;
+}
+.btn{
+    width: 12vw;
+    height: 6vh;
+    background-color: var(--color-tomate);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-blanco);
+    font-size: large;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-tomate);
+}
+.c1{
+    padding-top: 65px;
+    grid-area: c1;
+}
+.c1 div{
+    width: 13vw;
+    height: 8vh;
+    background: rgba(255, 255, 255, 0.566);
+    background: linear-gradient(90deg,  rgba(255, 255, 255, 0.321) 35%, rgba(255, 255, 255, 0.309) 10%, rgba(255, 255, 255, 0.104) 70%,  rgba(255, 255, 255, 0.001)100%); 
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blanco);
+}
+.c2{
+    grid-area: c2;
+    padding-top: 65px;
+}
+.c2 div{
+    width: 13vw;
+    height: 8vh;
+    background: rgba(255, 255, 255, 0.566);
+    background: linear-gradient(90deg,  rgba(255, 255, 255, 0.321) 35%, rgba(255, 255, 255, 0.309) 10%, rgba(255, 255, 255, 0.104) 70%,  rgba(255, 255, 255, 0.001)100%); 
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blanco);
+}
+.c3{
+    grid-area: c3;
+    padding-top: 65px;
+}
+.c3 div {
+    width: 13vw;
+    height: 8vh;
+    background: rgba(255, 255, 255, 0.566);
+    background: linear-gradient(90deg,  rgba(255, 255, 255, 0.321) 35%, rgba(255, 255, 255, 0.309) 10%, rgba(255, 255, 255, 0.104) 70%,  rgba(255, 255, 255, 0.001)100%); 
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blanco);
+}
