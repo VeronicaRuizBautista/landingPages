@@ -1,1 +1,54 @@
 @import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: var(--gris-claro);
+}
+.body{
+    inset: 0;
+    margin: auto;
+    outline: solid black;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--color-blanco);
+    display: grid;
+    grid-template-columns: 1fr repeat(2, .5fr) 1fr .2fr;
+    grid-template-rows: .8fr 3fr .5fr .8fr .3fr;
+    grid-template-areas:
+    "forma forma . . ."
+    "forma forma img img ."
+    ". . . . ."
+    "ilera ilera ilera ilera ."
+    ". . . . ."
+    ;
+}
+.forma{
+    width: 90%;
+    padding: 40px;
+    grid-area: forma;
+    background-color: var(--color-forma);
+    border-bottom-right-radius: 100px;
+}
+.img{
+    /* background-color: aqua; */
+    grid-area: img;
+    width: 35vw;
+    height: 60vh;
+    display: flex;
+    margin-left: -7vw;
+}
+.img img{
+    width: 100%;
+}
+.ilera{
+    padding: 40px;
+    grid-area: ilera;
+    display: flex;
+}
+.ilera div{
+    display: flex;
+}
